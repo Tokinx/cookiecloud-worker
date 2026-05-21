@@ -1,0 +1,14 @@
+name = "cookiecloud-worker"
+main = "src/index.ts"
+compatibility_date = "2025-04-01"
+
+[[kv_namespaces]]
+binding = "COOKIE_DATA"
+id = "e0e5ed65f910498fb2cf5ef99a28601a"
+preview_id = "YOUR_KV_NAMESPACE_ID"
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+[[env.production.kv_namespaces]]
+binding = "COOKIE_DATA"
+id = "YOUR_KV_NAMESPACE_ID"
